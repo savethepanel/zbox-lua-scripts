@@ -8,7 +8,7 @@ These scripts are intended to make configuration, maintenance, and automation ta
 
 ### Enable Unavailable Notifications
 
-`notifications/enable-unavailable-notifications.lua`
+`notifications/enable-device-notifications.lua`
 
 Bulk-configures the **Unavailable** notification for applicable devices on a Zooz Z-Box Hub.
 
