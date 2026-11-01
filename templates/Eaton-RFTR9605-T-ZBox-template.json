@@ -1,0 +1,231 @@
+{
+  "description": "Eaton RFTR9605-T Z-Wave Plus receptacle",
+  "parameters": [
+    {
+      "defaultValue": 10,
+      "description": {
+        "en": "Delay in seconds for the button press-and-hold delayed-OFF function."
+      },
+      "format": {
+        "max": 127,
+        "min": 0,
+        "scale": 1,
+        "step": 1,
+        "type": "range",
+        "unit": "s"
+      },
+      "label": {
+        "en": "Delayed OFF time"
+      },
+      "parameterNumber": 1,
+      "size": 1
+    },
+    {
+      "defaultValue": 1,
+      "description": {
+        "en": "ON interval in seconds during panic mode."
+      },
+      "format": {
+        "max": 127,
+        "min": 0,
+        "scale": 1,
+        "step": 1,
+        "type": "range",
+        "unit": "s"
+      },
+      "label": {
+        "en": "Panic ON time"
+      },
+      "parameterNumber": 2,
+      "size": 1
+    },
+    {
+      "defaultValue": 1,
+      "description": {
+        "en": "OFF interval in seconds during panic mode."
+      },
+      "format": {
+        "max": 127,
+        "min": 0,
+        "scale": 1,
+        "step": 1,
+        "type": "range",
+        "unit": "s"
+      },
+      "label": {
+        "en": "Panic OFF time"
+      },
+      "parameterNumber": 3,
+      "size": 1
+    },
+    {
+      "defaultValue": 1,
+      "description": {
+        "en": "Select the controlled outlet state when power returns."
+      },
+      "format": {
+        "type": "enumerated",
+        "values": [
+          {
+            "description": {
+              "en": "OFF"
+            },
+            "type": "value",
+            "value": 1
+          },
+          {
+            "description": {
+              "en": "ON"
+            },
+            "type": "value",
+            "value": 2
+          },
+          {
+            "description": {
+              "en": "Restore previous state"
+            },
+            "type": "value",
+            "value": 3
+          }
+        ]
+      },
+      "label": {
+        "en": "State after power restoration"
+      },
+      "parameterNumber": 5,
+      "size": 1
+    },
+    {
+      "defaultValue": 0,
+      "description": {
+        "en": "Enable or disable panic mode."
+      },
+      "format": {
+        "type": "enumerated",
+        "values": [
+          {
+            "description": {
+              "en": "Disabled"
+            },
+            "type": "value",
+            "value": 0
+          },
+          {
+            "description": {
+              "en": "Enabled"
+            },
+            "type": "value",
+            "value": 1
+          }
+        ]
+      },
+      "label": {
+        "en": "Panic mode"
+      },
+      "parameterNumber": 6,
+      "size": 1
+    },
+    {
+      "defaultValue": 3,
+      "description": {
+        "en": "Indicator brightness while the controlled outlet is ON. Zero disables the LED; levels 1 through 4 increase brightness."
+      },
+      "format": {
+        "type": "enumerated",
+        "values": [
+          {
+            "description": {
+              "en": "LED off"
+            },
+            "type": "value",
+            "value": 0
+          },
+          {
+            "description": {
+              "en": "Level 1 (lowest)"
+            },
+            "type": "value",
+            "value": 1
+          },
+          {
+            "description": {
+              "en": "Level 2"
+            },
+            "type": "value",
+            "value": 2
+          },
+          {
+            "description": {
+              "en": "Level 3"
+            },
+            "type": "value",
+            "value": 3
+          },
+          {
+            "description": {
+              "en": "Level 4 (highest)"
+            },
+            "type": "value",
+            "value": 4
+          }
+        ]
+      },
+      "label": {
+        "en": "Blue LED brightness when outlet is ON"
+      },
+      "parameterNumber": 13,
+      "size": 1
+    },
+    {
+      "defaultValue": 1,
+      "description": {
+        "en": "Indicator brightness while the controlled outlet is OFF. Zero disables the LED; levels 1 through 4 increase brightness."
+      },
+      "format": {
+        "type": "enumerated",
+        "values": [
+          {
+            "description": {
+              "en": "LED off"
+            },
+            "type": "value",
+            "value": 0
+          },
+          {
+            "description": {
+              "en": "Level 1 (lowest)"
+            },
+            "type": "value",
+            "value": 1
+          },
+          {
+            "description": {
+              "en": "Level 2"
+            },
+            "type": "value",
+            "value": 2
+          },
+          {
+            "description": {
+              "en": "Level 3"
+            },
+            "type": "value",
+            "value": 3
+          },
+          {
+            "description": {
+              "en": "Level 4 (highest)"
+            },
+            "type": "value",
+            "value": 4
+          }
+        ]
+      },
+      "label": {
+        "en": "Blue LED brightness when outlet is OFF"
+      },
+      "parameterNumber": 14,
+      "size": 1
+    }
+  ]
+}
