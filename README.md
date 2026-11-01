@@ -1,6 +1,6 @@
-# Z-Box Lua Scripts
+# Z-Box Scripts and Templates
 
-Community-developed Lua scripts and utilities for the Zooz Z-Box Hub.
+Community-developed Lua scripts, utilities, and device parameter templates for the Zooz Z-Box Hub.
 
 These scripts are intended to make configuration, maintenance, and automation tasks easier on the Z-Box platform. Scripts in this repository may use the Z-Box/FIBARO HC3 local API and should be reviewed before use.  Scripts are a combination of hand coding and AI assistance, so please beware and use at your own risk.
 
@@ -79,3 +79,22 @@ Bug reports, firmware compatibility reports, improvements, and additional Z-Box 
 ## License
 
 Released under the MIT License.
+
+## Device Templates
+
+The [templates folder](templates/) contains custom JSON parameter templates for Z-Wave devices used with the Zooz Z-Box Hub.
+
+These templates expose device configuration settings in the hub’s Parameters tab.
+
+### Available templates
+
+- [Eaton RFTR9605-T](templates/Eaton-RFTR9605-T-ZBox-template.json) — Includes delayed OFF, panic mode, power-restoration behavior, and LED brightness settings. Not yet tested on a physical Z-Box hub.
+
+### Installation
+
+1. Download the device’s JSON template. On its GitHub file page, click **Download raw file**.
+2. In the Z-Box web interface, open **Settings → Devices → your device → Parameters**.
+3. Save the existing template first, if available.
+4. Click **Upload Template**, select the downloaded JSON file, and confirm the override.
+
+Check the device model and compatibility notes before applying a template. See the [templates README](templates/README.md) for more information.
